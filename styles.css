@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-Bold.ttf'),
+    url('fonts/montserrat/montserrat-regular.woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url('fonts/montserrat/montserrat-regular.woff2'),
+    url('fonts/montserrat/montserrat-regular.woff2');
+}
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 45px;
+    align-items: center;
+    background-color: #290059;
+    height: 100vh;
+}
+
+main .contenedor-titulo{
+    font-family: 'Montserrat';
+    color: #ffffff;
+    text-align: center;
+}
+
+main .contenedor-titulo h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+main .contenedor-titulo span{
+    font-family: 'Montserrat-light';
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.contenedor-cards section span{
+    font-size: 27px;
+    font-family: 'arial';
+    margin-bottom: 5px;
+}
+
+
+main .contenedor-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.contenedor-cards .cards{
+    position: relative;
+    width: 300px;
+    height: 419px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor-cards section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 28px 0 10px 0;
+    text-align: center;
+    border-radius: 21px;
+    background-color: #ffffff;
+}
+
+.contenedor-cards section h2,
+.contenedor-cards .titulo-h2 p{
+    font-family: 'Montserrat';
+    color: #1E0042;
+    font-size: 30px;
+}
+
+.contenedor-cards article{
+    display: flex;
+    flex-direction: column;
+    padding: 29px 0 16px 0;
+}
+
+.contenedor-cards .boton{
+    position: absolute;
+    bottom: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004AAD;
+    border-radius: 7px;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.contenedor-cards .boton span{
+    font-family: 'Montserrat-light';
+    font-weight: bold;
+}
+
+section .titulo-h2 .raya-1 {
+    height: 2px;
+    width: 200px;
+    background-color: #00000096;
+    margin: 20px 0 20px 0;
+}
+
+
+@media (max-width: 576px){
+    main .contenedor-cards{
+        flex-direction: column;
+    }
+}
